@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: react-app-challenge-development
+  pool: 5
+  timeout: 5000
+  username:
+  password:
