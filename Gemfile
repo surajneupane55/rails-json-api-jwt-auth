@@ -43,3 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'binding_of_caller'
 gem 'knock'
+gem 'active_model_serializers', '~> 0.10.0'
