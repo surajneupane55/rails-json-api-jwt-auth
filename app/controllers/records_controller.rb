@@ -1,5 +1,7 @@
 class RecordsController < ApplicationController
-  before_action :authenticate_user
+ #before_action :authenticate_user
+
+  before_action :set_record, only: [:show, :update, :destroy]
 
   # GET /records
   def index
@@ -40,10 +42,24 @@ class RecordsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    
+    def set_record
+      @record = Record.find(params[:id])
+    end
 
     # Only allow a trusted parameter "white list" through.
     def record_params
       params.require(:record).permit(:username, :email, :phone)
     end
 end
+
+
+
+
+
+
+
+
+
+
+
+
